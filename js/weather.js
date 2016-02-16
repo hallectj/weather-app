@@ -12,7 +12,7 @@ $(document).ready(function() {
   
     $.ajax({
       //url: 'http://freegeoip.net/json/?callback=?',
-      url: '//freegeoip.net/json/?callback=?',
+      url: 'https://freegeoip.net/json/?callback=?',
       type: 'POST',
       dataType: 'jsonp',
       
