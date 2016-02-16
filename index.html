@@ -1,0 +1,89 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/main-styles.css">
+</head>
+
+<body>
+  <div id="weather-page-wrapper">
+
+    <div id="inner-weather-wrapper">
+      <div>
+
+        <div class="weather-containers">
+          <h2 class="current-date day"></h2>
+          <p class="current-date date"></p>
+        </div>
+
+        <div id="main-weather-portion">
+
+          <div class="temperature">
+            <p class="deg"></p>
+            <p class="city"></p>
+          </div>
+
+          <div class="extra-info">
+            <div class="weather-symbol-container">
+              <p></p>
+              <p class="likely-weather"></p>
+            </div>
+            <div class="low-high-container">
+              <div class="low-high high">
+                <p>High &#x25B2;</p>
+                <p></p>
+              </div>
+              <div class="low-high low">
+                <p>Low &#x25BC;</p>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="weather-containers" id="weather-slider">
+          <!--<div class="arrow"> Arrow left</div>-->
+
+          <div class="forecast-boxes"><i class="icon-small"></i>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="forecast-boxes"><i class="icon-small"></i>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="forecast-boxes"><i class="icon-small"></i>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="forecast-boxes"><i class="icon-small"></i>
+            <p></p>
+            <p></p>
+          </div>
+          <div class="forecast-boxes"><i class="icon-small"></i>
+            <p></p>
+            <p></p>
+          </div>
+
+          <!-- <div class="arrow"> Arrow right</div>-->
+        </div>
+      </div>
+
+      <div class="error"></div>
+
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+  <script type="text/javascript" src="js/weather.js"></script>
+
+</body>
+
+</html>

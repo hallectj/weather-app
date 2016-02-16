@@ -1,0 +1,369 @@
+/*for the icons to appear*/
+@font-face{
+  font-family: "weather";
+  src: url('../artill_clean_icons.otf') format('opentype');
+}
+
+/*regular styles*/
+html {
+  width: 100%;
+  height: 100%;
+  background: #1192d3 url(https://static.pexels.com/photos/230/landscape-nature-forest-trees.jpg) no-repeat bottom right;
+  background-size: cover;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #000;
+  background-color: #ccc;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Arial, sans-serif;
+}
+
+h2 {
+  font-size: 1.4em;
+  padding: 5px;
+}
+
+p {
+  padding: 5px;
+}
+
+.current-date {
+  background: rgba(30, 34, 35, 0.6);
+
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  font-family: 'Oswald',"Arial", "Tahoma";
+}
+
+#weather-page-wrapper {
+  position: fixed;
+  width: 648px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#weather-page-wrapper::after {
+  content: "";
+  opacity: 0.34;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, .6);
+  background-size: cover;
+  background-position: center;
+}
+
+#inner-weather-wrapper {
+  margin: 5% auto;
+  width: 80%;
+  background-color: rgba(75, 50, 10, 0.35);
+}
+
+#inner-weather-wrapper >div:first-child {
+  display: flex;
+  flex-direction: column;
+  margin: 2% auto;
+  width: auto;
+}
+
+#main-weather-portion {
+  margin: 20px auto;
+  overflow: hidden;
+  padding: 2px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+#main-weather-portion > div:first-child {
+  border-radius: 20px;
+}
+
+#main-weather-portion .temperature {
+  border: 2px solid #444;
+  width: 50%;
+  background: rgba(30, 34, 35, 0.6);
+  margin: 10px;
+  font-size: 1.4em;
+  color: #fff;
+  text-shadow: 2px 2px #000119;
+  text-emphasis: bold;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+#main-weather-portion .extra-info {
+  width: 50%;
+  margin: 10px;
+  color: #fff;
+}
+
+.weather-containers p,
+.weather-containers h2 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.weather-symbol-container,
+.low-high-container {
+  border: 2px solid #444;
+  background: rgba(30, 34, 35, 0.6);
+}
+
+
+/* temperature styles */
+
+.temperature .deg {
+  font-size: 5em;
+  text-shadow: 2px 2px #151515;
+}
+
+.weather-symbol-container p {
+  text-align: center;
+}
+
+.low-high-container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding: 3px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.low-high {
+  width: 50%;
+}
+
+#weather-slider {
+  /*background-color: #29324F;*/
+  display: flex;
+}
+
+.forecast-boxes {
+  background: rgba(30, 34, 35, 0.6);
+  flex: 1;
+  padding: 2px;
+  margin: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+
+
+/*Styles below is for the icons to work*/
+
+
+i {
+  color: #fff;
+  font-family: "weather";
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.0;
+}
+
+.icon-0:before {
+  content: ":";
+}
+
+.icon-1:before {
+  content: "p";
+}
+
+.icon-2:before {
+  content: "S";
+}
+
+.icon-3:before {
+  content: "Q";
+}
+
+.icon-4:before {
+  content: "S";
+}
+
+.icon-5:before {
+  content: "W";
+}
+
+.icon-6:before {
+  content: "W";
+}
+
+.icon-7:before {
+  content: "W";
+}
+
+.icon-8:before {
+  content: "W";
+}
+
+.icon-9:before {
+  content: "I";
+}
+
+.icon-10:before {
+  content: "W";
+}
+
+.icon-11:before {
+  content: "I";
+}
+
+.icon-12:before {
+  content: "I";
+}
+
+.icon-13:before {
+  content: "I";
+}
+
+.icon-14:before {
+  content: "I";
+}
+
+.icon-15:before {
+  content: "W";
+}
+
+.icon-16:before {
+  content: "I";
+}
+
+.icon-17:before {
+  content: "W";
+}
+
+.icon-18:before {
+  content: "U";
+}
+
+.icon-19:before {
+  content: "Z";
+}
+
+.icon-20:before {
+  content: "Z";
+}
+
+.icon-21:before {
+  content: "Z";
+}
+
+.icon-22:before {
+  content: "Z";
+}
+
+.icon-23:before {
+  content: "Z";
+}
+
+.icon-24:before {
+  content: "E";
+}
+
+.icon-25:before {
+  content: "E";
+}
+
+.icon-26:before {
+  content: "3";
+}
+
+.icon-27:before {
+  content: "a";
+}
+
+.icon-28:before {
+  content: "A";
+}
+
+.icon-29:before {
+  content: "a";
+}
+
+.icon-30:before {
+  content: "A";
+}
+
+.icon-31:before {
+  content: "6";
+}
+
+.icon-32:before {
+  content: "1";
+}
+
+.icon-33:before {
+  content: "6";
+}
+
+.icon-34:before {
+  content: "1";
+}
+
+.icon-35:before {
+  content: "W";
+}
+
+.icon-36:before {
+  content: "1";
+}
+
+.icon-37:before {
+  content: "S";
+}
+
+.icon-38:before {
+  content: "S";
+}
+
+.icon-39:before {
+  content: "S";
+}
+
+.icon-40:before {
+  content: "M";
+}
+
+.icon-41:before {
+  content: "W";
+}
+
+.icon-42:before {
+  content: "I";
+}
+
+.icon-43:before {
+  content: "W";
+}
+
+.icon-44:before {
+  content: "a";
+}
+
+.icon-45:before {
+  content: "S";
+}
+
+.icon-46:before {
+  content: "U";
+}
+
+.icon-47:before {
+  content: "S";
+}
+
+.icon-small {
+  font-size: 20px;
+}
