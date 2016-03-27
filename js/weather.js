@@ -11,9 +11,8 @@ $(document).ready(function() {
   loadWeather("New York City", "");
   
     $.ajax({
-      //url: 'http://freegeoip.net/json/?callback=?',
-      url: 'https://freegeoip.net/json/?callback=?',
-      type: 'POST',
+      url:  'http://ip-api.com/json',
+      type: 'GET',
       dataType: 'jsonp',
       
       success: function(response){
